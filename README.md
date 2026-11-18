@@ -1,4 +1,4 @@
-# ROS2 Mini Project: 2WD 로봇카 · 로봇팔 디지털 트윈 · OpenCV 객체 추적
+# ROS2 Robot Car & Arm: 2WD 로봇카 · 로봇팔 디지털 트윈 · OpenCV 객체 추적
 
 ![ROS 2 Jazzy](https://img.shields.io/badge/ROS_2-Jazzy-22314E?logo=ros)
 ![Ubuntu 24.04](https://img.shields.io/badge/Ubuntu-24.04-E95420?logo=ubuntu&logoColor=white)
@@ -102,8 +102,8 @@ HSV 임계값은 `config/params.yaml`에서 정하며, `ros2 param set`으로 �
 
 ```bash
 # 0) 소스 받기
-git clone https://github.com/pth6254/ros2-mini-project.git
-cd ros2-mini-project
+git clone https://github.com/pth6254/ros2-robot-car-and-arm.git
+cd ros2-robot-car-and-arm
 
 # 1) 의존성
 sudo apt install ros-jazzy-desktop ros-jazzy-joint-state-publisher-gui libopencv-dev
