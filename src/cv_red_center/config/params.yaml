@@ -1,0 +1,10 @@
+red_center_publisher:
+  ros__parameters:
+    camera_index: 0
+    min_area: 500.0
+    show_window: true
+    # HSV 임계값 (OpenCV Hue 범위: 0~180)
+    s_min: 120
+    v_min: 70
+    h_low_max: 10     # 빨강 구간1: 0 ~ 10
+    h_high_min: 170   # 빨강 구간2: 170 ~ 180

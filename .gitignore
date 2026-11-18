@@ -1,0 +1,19 @@
+# colcon 빌드 산출물
+build/
+install/
+log/
+
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# 비밀 정보: WiFi 비밀번호 (wifi_config.example.h 를 복사해서 사용)
+arduino/robot_car_motor_esp32/wifi_config.h
+
+# 에디터/OS
+.vscode/
+.idea/
+*.swp
+.DS_Store

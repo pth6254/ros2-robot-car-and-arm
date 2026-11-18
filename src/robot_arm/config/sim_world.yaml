@@ -1,0 +1,22 @@
+# 가상 ToF 센서용 시뮬레이션 환경 (frame: base_sub_assembly, 단위 m, z 위쪽)
+#
+# 스캔 자세(팔 세우고 end +90도)에서 센서 높이는 약 0.22 m 이고
+# base 0도일 때 +x 방향을 본다. base를 -90~+90도 돌리면 +x 쪽 반원을 훑는다.
+#
+# boxes: center [x, y, z], size [sx, sy, sz]  (축 정렬 상자)
+tof_sim:
+  ros__parameters:
+    world_frame: base_sub_assembly
+    # z=0 책상면도 측정 대상으로 할지.
+    # true 이면 시야각(25도) 아래쪽 가장자리가 약 1 m 앞 책상에 닿아, 빈 방향에서도 ~1 m 값이 나온다
+    # (실물 VL53L0X 를 책상 위 22 cm 높이에 달면 실제로 생길 수 있는 현상)
+    ground_plane: false
+    box_names:   [front_wall, right_wall, box_a, box_b]
+    box_centers: [0.45, 0.0, 0.2,
+                  0.20, -0.35, 0.2,
+                  0.22, 0.18, 0.15,
+                  0.28, -0.12, 0.15]
+    box_sizes:   [0.02, 1.0, 0.4,
+                  0.5, 0.02, 0.4,
+                  0.08, 0.08, 0.3,
+                  0.05, 0.05, 0.3]

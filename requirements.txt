@@ -1,0 +1,5 @@
+# ROS2 Jazzy 의 시스템 패키지(rclpy 등) 위에 추가로 필요한 Python 패키지
+# python3 -m venv --system-site-packages venv && venv/bin/pip install -r requirements.txt
+pybullet
+pyserial
+pyyaml
